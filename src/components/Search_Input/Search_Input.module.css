@@ -1,0 +1,76 @@
+.form_container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--slate-600);
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: -55px;
+  box-shadow: 5px 10px 15px #00000010;
+}
+
+.form_input_container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.search_icon {
+  color: var(--slate-600);
+}
+
+.form_search_input {
+  border: 0;
+  outline: none;
+  color: var(--slate-600);
+  font: var(--header_search_input_placeholder);
+  width: 100%;
+}
+
+.form_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form_reset_button {
+  background: none;
+  outline: none;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_reset_button:disabled {
+  display: none;
+}
+
+.erase_icon {
+  color: var(--slate-300);
+  cursor: pointer;
+}
+
+.form_input_submit {
+  background: none;
+  outline: none;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_input_submit:disabled {
+  display: none;
+}
+
+.arrow_right_icon {
+  transform: rotate(180deg);
+  cursor: pointer;
+}

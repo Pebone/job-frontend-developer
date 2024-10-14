@@ -1,10 +1,10 @@
 :root {
-  --slate-50: #E6E6E6;
-  --slate-100: #F1F5F9;
-  --slate-300: #CBD5E1;
+  --slate-50: #e6e6e6;
+  --slate-100: #f1f5f9;
+  --slate-300: #cbd5e1;
   --slate-600: #475569;
-  --slate-800: #1E293B;
-  --accent: #008B8B;
+  --slate-800: #1e293b;
+  --accent: #008b8b;
 
   --header_heading: 700 64px/72px "Playfair Display", sans-serif;
   --header_subtitle: 400 24px/32px "Poppins", sans-serif;
@@ -23,6 +23,8 @@
   --article_title: 700 64px/72px "Playfair Display", sans-serif;
   --article_author_name: 700 16px/20px "Roboto Condensed", sans-serif;
   --article_author_secondary: 400 14px/17.5px "Roboto Condensed", sans-serif;
+
+  --search_page_goHome: 700 16px/150% "Poppins", sans-serif;
 }
 
 *,
