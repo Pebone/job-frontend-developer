@@ -1,0 +1,50 @@
+:root {
+  --slate-50: #E6E6E6;
+  --slate-100: #F1F5F9;
+  --slate-300: #CBD5E1;
+  --slate-600: #475569;
+  --slate-800: #1E293B;
+  --accent: #008B8B;
+
+  --header_heading: 700 64px/72px "Playfair Display", sans-serif;
+  --header_subtitle: 400 24px/32px "Poppins", sans-serif;
+  --header_search_input_placeholder: 400 16px/24px "Poppins", sans-serif;
+
+  --page_heading_title: 800 24px/24px "Poppins", sans-serif;
+  --page_heading_secondary: 400 20px/24px "Poppins", sans-serif;
+
+  --teaser_block_hat: 700 16px/16px "Roboto Condensed", sans-serif;
+  --teaser_block_text_heading: 800 36px/48px "Playfair Display", sans-serif;
+  --teaser_block_text_lead: 400 20px/27.5px "Roboto Condensed", sans-serif;
+  --teaser_block_author_name: 700 16px/22px "Poppins", sans-serif;
+  --teaser_block_author_secondary: 400 14px/17.5px "Poppins", sans-serif;
+
+  --article_hat: 700 24px/24px "Poppins", sans-serif;
+  --article_title: 700 64px/72px "Playfair Display", sans-serif;
+  --article_author_name: 700 16px/20px "Roboto Condensed", sans-serif;
+  --article_author_secondary: 400 14px/17.5px "Roboto Condensed", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
