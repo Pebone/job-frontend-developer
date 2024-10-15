@@ -37,31 +37,35 @@ export default function SearchResults() {
   return (
     <section>
       <Search_Header />
-      <h1 className={styles.search_results_title}>O resultado da sua busca</h1>
-      {articles.length > 0 ? (
-        articles
-          .filter((article) => {
-            return !(
-              article.title === "[Removed]" ||
-              article.title === null ||
-              article.content === "[Removed]" ||
-              article.content === null ||
-              article.description === "[Removed]" ||
-              article.description === null ||
-              article.source.name === "[Removed]" ||
-              article.source.name === null ||
-              article.author === "[Removed]" ||
-              article.author === null ||
-              article.url === "[Removed]" ||
-              article.url === null ||
-              article.urlToImage === "[Removed]" ||
-              article.urlToImage === null
-            );
-          })
-          .map((article, index) => (
-            <div className={styles.container}>
-              <div className={styles.search_results_container}>
-                <div className={styles.search_results_header}>
+      <div className={styles.container}>
+        <div className={styles.search_results_container}>
+          {articles.length > 0 ? (
+            <>
+              <div className={styles.search_results_header}>
+                <h1 className={styles.search_results_title}>
+                  O resultado da sua busca
+                </h1>
+              </div>
+              {articles
+                .filter((article) => {
+                  return !(
+                    article.title === "[Removed]" ||
+                    article.title === null ||
+                    article.content === "[Removed]" ||
+                    article.content === null ||
+                    article.description === "[Removed]" ||
+                    article.description === null ||
+                    article.source.name === "[Removed]" ||
+                    article.source.name === null ||
+                    article.author === "[Removed]" ||
+                    article.author === null ||
+                    article.url === "[Removed]" ||
+                    article.url === null ||
+                    article.urlToImage === "[Removed]" ||
+                    article.urlToImage === null
+                  );
+                })
+                .map((article, index) => (
                   <ArticleItem
                     index={index}
                     urlToImage={article.urlToImage}
@@ -71,28 +75,22 @@ export default function SearchResults() {
                     author={article.author}
                     publishedAt={article.publishedAt}
                   />
-                </div>
-              </div>
-            </div>
-          ))
-      ) : (
-        <section>
-          <div>
-            <div className={styles.search_results_none_container}>
-              <p className={styles.search_results_none}>
-                Nenhum resultado foi encontrado com o termo pesquisado. Talvez
-                pode você gostar da nossa sugestão de notícias
-              </p>
-            </div>
-
+                ))}
+            </>
+          ) : (
             <section>
-              <div>
-                <LatestNews title="Sugestão de notícias" />
+              <div className={styles.search_results_none_container}>
+                <p className={styles.search_results_none}>
+                  Nenhum resultado foi encontrado com o termo pesquisado. Talvez
+                  pode você gostar da nossa sugestão de notícias
+                </p>
               </div>
+
+              <LatestNews title="Sugestão de notícias" />
             </section>
-          </div>
-        </section>
-      )}
+          )}
+        </div>
+      </div>
     </section>
   );
 }

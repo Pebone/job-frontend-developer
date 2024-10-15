@@ -35,13 +35,13 @@ export default function SearchInput() {
         />
       </div>
       <div className={styles.form_buttons}>
-        <button
+        <div
           className={styles.form_reset_button}
           disabled={!query}
           onClick={handleReset}
         >
           <img className={styles.erase_icon} src={Reset}></img>
-        </button>
+        </div>
         <button
           className={styles.form_input_submit}
           disabled={!query}
