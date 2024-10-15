@@ -35,12 +35,14 @@
   
   .teaser {
     display: flex;
-    gap: 0.75rem;
+    gap: 1.5rem;
   }
   
   .thumbnail{
     max-width: 424px;
     height: 317px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px #00000070;
   }
   
   .teaser_container {
@@ -65,6 +67,11 @@
   
   .teaser_heading {
     font: var(--teaser_block_text_heading);
+    cursor: pointer;
+  }
+
+  .teaser_heading:hover {
+    text-decoration: underline;
   }
   
   .teaser_lead {

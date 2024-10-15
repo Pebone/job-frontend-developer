@@ -29,6 +29,12 @@
   --search_result_title: 800 24px/24px "Poppins", sans-serif;
   --search_result_none: 400 20px/137.5% "Roboto Condensed", sans-serif;
   --search_result_sugestion_title: 800 24px/24px "Poppins", sans-serif;
+
+  --news_hat: 800 24px/24px "Poppins", sans-serif;
+  --news_title: 700 64px/72px "Playfair Display", sans-serif;
+  --news_author: 700 16px/125% "Roboto Condensed", sans-serif;
+  --news_publishedAt: 400 14px/125% "Roboto Condensed", sans-serif;
+  --news_content: 400 24px/125% "Roboto Condensed", sans-serif;
 }
 
 *,
