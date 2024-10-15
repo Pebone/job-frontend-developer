@@ -13,7 +13,18 @@ export default function SearchResults() {
   const { query } = useParams();
   const [articles, setArticles] = useState([]);
 
-  const category = query;
+  const allCategories = [
+    "technology",
+    "business",
+    "sports",
+    "science",
+    "health",
+    "entertainment",
+    "general",
+  ];
+
+  const searchByCategory = allCategories.includes(query) ? query : "";
+  const searchByQ = !allCategories.includes(query) ? query : "";
 
   console.log(query.toString());
 
@@ -22,7 +33,8 @@ export default function SearchResults() {
       try {
         const response = await api.get("", {
           params: {
-            category: category,
+            category: searchByCategory,
+            q: searchByQ,
           },
         });
         setArticles(response.data.articles);
@@ -32,7 +44,7 @@ export default function SearchResults() {
     };
 
     fetchArticles();
-  }, [category]);
+  }, [searchByCategory, searchByQ]);
 
   return (
     <section>
