@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import styles from "./Search_Input.module.css";
 
 import Search from "../../assets/icons/search.svg";
@@ -35,10 +35,18 @@ export default function SearchInput() {
         />
       </div>
       <div className={styles.form_buttons}>
-        <button className={styles.form_reset_button} disabled={!query} onClick={handleReset}>
+        <button
+          className={styles.form_reset_button}
+          disabled={!query}
+          onClick={handleReset}
+        >
           <img className={styles.erase_icon} src={Reset}></img>
         </button>
-        <button className={styles.form_input_submit} disabled={!query} type="submit">
+        <button
+          className={styles.form_input_submit}
+          disabled={!query}
+          type="submit"
+        >
           <img className={styles.arrow_right_icon} src={ArrowRight}></img>
         </button>
       </div>

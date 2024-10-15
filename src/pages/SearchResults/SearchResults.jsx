@@ -2,24 +2,36 @@ import Logo from "../../assets/images/logo.png";
 import arrowLeft from "../../assets/icons/arrow-left.svg";
 import styles from "./SearchResults.module.css";
 import SearchInput from "../../components/Search_Input/Search_Input";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import Search_Header from "../../components/Search_Header/Search_Header";
+import { useEffect, useState } from "react";
+import api from "../../api/api";
 
 export default function SearchResults() {
-  return (
-    <section className={styles.container}>
-      <Link to={"/"} className={styles.go_back_container}>
-        <img className={styles.go_back_icon} src={arrowLeft}></img>
-        <p>Home</p>
-      </Link>
-      <div className={styles.search_input_container}>
-        <div className={styles.search_input_logo}>
-          <img className={styles.logo} src={Logo}></img>
-        </div>
+  const { query } = useParams();
+  const [articles, setArticles] = useState([]);
 
-        <div className={styles.content}>
-          <SearchInput />
-        </div>
-      </div>
+  useEffect(() => {
+    const fetchArticles = async () => {
+      try {
+        const response = await api.get("", {
+          params: {
+            country: "us",
+            category: { query },
+          },
+        });
+        setArticles(response.data.articles);
+      } catch (error) {
+        console.error("Erro ao buscar notícias:", error);
+      }
+    };
+
+    fetchArticles();
+  }, [query]);
+
+  return (
+    <section>
+      <Search_Header />
     </section>
   );
 }
