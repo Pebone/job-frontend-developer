@@ -35,6 +35,8 @@
   --news_author: 700 16px/125% "Roboto Condensed", sans-serif;
   --news_publishedAt: 400 14px/125% "Roboto Condensed", sans-serif;
   --news_content: 400 24px/125% "Roboto Condensed", sans-serif;
+
+  --pagination_button: 400 16px/36px "Poppins", sans-serif;
 }
 
 *,

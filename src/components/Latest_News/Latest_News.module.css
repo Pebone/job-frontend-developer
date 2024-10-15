@@ -33,6 +33,77 @@
   color: var(--slate-600);
 }
 
+.pagination_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.pagination_prev_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  background: none;
+  border: 0;
+  filter: invert(43%) sepia(58%) saturate(443%) hue-rotate(135deg)
+    brightness(91%) contrast(87%);
+  cursor: pointer;
+}
+
+.pagination_prev_button:disabled {
+  filter: invert(80%);
+  cursor: not-allowed;
+}
+
+.pagination_prev {
+}
+
+.pagination_next_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  background: none;
+  border: 0;
+  filter: invert(43%) sepia(58%) saturate(443%) hue-rotate(135deg)
+    brightness(91%) contrast(87%);
+  cursor: pointer;
+}
+
+.pagination_next_button:disabled {
+  filter: invert(80%);
+  cursor: not-allowed;
+}
+
+.pagination_next {
+  transform: rotate(180deg);
+}
+
+.pagination_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.currentPage {
+  color: var(--accent);
+  background: none;
+  outline: none;
+  border: 0;
+  font: var(--pagination_button);
+  cursor: pointer;
+}
+
+.page {
+  background: none;
+  outline: none;
+  border: 0;
+  font: var(--pagination_button);
+  cursor: pointer;
+}
+
 /* .teaser {
     display: flex;
     gap: 0.75rem;

@@ -37,7 +37,6 @@ export default function SearchInput() {
       <div className={styles.form_buttons}>
         <div
           className={styles.form_reset_button}
-          disabled={!query}
           onClick={handleReset}
         >
           <img className={styles.erase_icon} src={Reset}></img>
