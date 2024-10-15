@@ -14,7 +14,7 @@ export default function Home() {
 
           <div className={styles.content}>
             <h1 className={styles.content_title}>
-              Explore as últimas notícias sobre tecnologia da web
+              Explore as últimas notícias sobre tecnologia da web!
             </h1>
             <p className={styles.content_subtitle}>
               Selecionamos todas as notícias sobre tecnologia produzidas na web

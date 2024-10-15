@@ -94,7 +94,7 @@ export default function SearchResults() {
               <div className={styles.search_results_none_container}>
                 <p className={styles.search_results_none}>
                   Nenhum resultado foi encontrado com o termo pesquisado. Talvez
-                  pode você gostar da nossa sugestão de notícias
+                  você possa gostar da nossa sugestão de notícias!
                 </p>
               </div>
 

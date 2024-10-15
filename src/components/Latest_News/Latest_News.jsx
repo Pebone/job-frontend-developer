@@ -82,35 +82,39 @@ export default function LatestNews(props) {
             />
           ))}
 
-        <div className={styles.pagination_container}>
-          <button
-            className={styles.pagination_prev_button}
-            onClick={prevPage}
-            disabled={currentPage === 1}
-          >
-            <img className={styles.pagination_prev} src={ArrowLeft}></img>
-          </button>
-          <div className={styles.pagination_buttons}>
-            {Array.from({ length: totalPages }, (_, index) => (
-              <button
-                key={index}
-                onClick={() => paginate(index + 1)}
-                className={
-                  currentPage === index + 1 ? styles.currentPage : styles.page
-                }
-              >
-                {index + 1}
-              </button>
-            ))}
+        {articles.length > 0 ? (
+          <div className={styles.pagination_container}>
+            <button
+              className={styles.pagination_prev_button}
+              onClick={prevPage}
+              disabled={currentPage === 1}
+            >
+              <img className={styles.pagination_prev} src={ArrowLeft}></img>
+            </button>
+            <div className={styles.pagination_buttons}>
+              {Array.from({ length: totalPages }, (_, index) => (
+                <button
+                  key={index}
+                  onClick={() => paginate(index + 1)}
+                  className={
+                    currentPage === index + 1 ? styles.currentPage : styles.page
+                  }
+                >
+                  {index + 1}
+                </button>
+              ))}
+            </div>
+            <button
+              className={styles.pagination_next_button}
+              onClick={nextPage}
+              disabled={currentPage === totalPages}
+            >
+              <img className={styles.pagination_next} src={ArrowLeft}></img>
+            </button>
           </div>
-          <button
-            className={styles.pagination_next_button}
-            onClick={nextPage}
-            disabled={currentPage === totalPages}
-          >
-            <img className={styles.pagination_next} src={ArrowLeft}></img>
-          </button>
-        </div>
+        ) : (
+          ""
+        )}
       </div>
     </section>
   );
