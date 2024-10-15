@@ -25,6 +25,10 @@
   --article_author_secondary: 400 14px/17.5px "Roboto Condensed", sans-serif;
 
   --search_page_goHome: 700 16px/150% "Poppins", sans-serif;
+
+  --search_result_title: 800 24px/24px "Poppins", sans-serif;
+  --search_result_none: 400 20px/137.5% "Roboto Condensed", sans-serif;
+  --search_result_sugestion_title: 800 24px/24px "Poppins", sans-serif;
 }
 
 *,

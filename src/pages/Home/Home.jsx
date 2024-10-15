@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <LatestNews />
+      <LatestNews title="Últimas notícias" subtitle />
     </section>
   );
 }
