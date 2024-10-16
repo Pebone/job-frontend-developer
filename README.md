@@ -12,8 +12,11 @@ Agradeço desde já a oportunidade de participar deste processo seletivo, pois a
 ## Objetivo
 O objetivo era desenvolver uma aplicação frontend que exibisse as últimas notícias sobre tecnologia em `ordem da publicação`. Além disso, deveria incluir um `sistema de busca` para que os usuários encontrassem o artigo baseado no title e author do seu interesse.
 
+## Como rodar o projeto
+Para rodar o projeto basta dar um git clone e, ao abrir o projeto no seu computador, abra o terminal da sua IDE e digite "git checkout master". Dessa forma, você estará na branch correta do projeto. Com isso, agora você pode digitar "npm i". Depois que a instalação for concluida, digite "npm run dev" e o projeto deverá ser iniciado corretamente.
+
 ## Tecnologias Utilizadas
-As tecnologias que eu utilizei para desenvolver esta aplicação foram: React.JS, CSS(CSS Modules), HTML, Vite, Material-UI, Axios, date-fns e sonner(Toast).
+As tecnologias que eu utilizei para desenvolver esta aplicação foram: React.JS, CSS(CSS Modules), HTML, Vite, GIT, Material-UI, Axios, date-fns e sonner(Toast).
 
 ## Requisitos
 ### Requisitos Funcinais

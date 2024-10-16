@@ -86,8 +86,9 @@ export default function LatestNews(props) {
                   article.urlToImage === null
                 );
               })
-              .map((article) => (
+              .map((article, index) => (
                 <ArticleItem
+                  key={index}
                   id={article.source.id}
                   urlToImage={article.urlToImage}
                   source_name={article.source.name}
