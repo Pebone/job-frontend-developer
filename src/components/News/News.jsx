@@ -1,10 +1,11 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import Avatar from "../../assets/images/photo.png";
 import { format } from "date-fns";
 import Search_Header from "../Search_Header/Search_Header";
 import styles from "./News.module.css";
 
 export default function News() {
+  const { category, slug } = useParams();
   const location = useLocation();
   const { title, content, author, hat, publishedAt, urlToImage, id } =
     location.state;
@@ -15,6 +16,9 @@ export default function News() {
     <section>
       <div className={styles.container}>
         <div className={styles.news_container}>
+          <div>
+            {category}
+          </div>
           <p className={styles.news_hat}>{hat}</p>
           <p className={styles.news_title}>{title}</p>
           <div className={styles.news_author_container}>

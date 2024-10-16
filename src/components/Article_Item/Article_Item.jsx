@@ -8,8 +8,17 @@ import { Skeleton } from "@mui/material";
 export default function ArticleItem(props) {
   const navigate = useNavigate();
 
+  const createSlug = (title, id, category) => {
+    const slugQuery = title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+    return `/${category}/${slugQuery}-${id}`;
+  };
+
   const handleClick = () => {
-    navigate("/news", {
+    const newsSlug = createSlug(props.title, props.id, props.category);
+    navigate(newsSlug, {
       state: {
         urlToImage: props.urlToImage,
         hat: props.source_name,

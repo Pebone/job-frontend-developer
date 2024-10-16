@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
     element: <SearchResults />,
   },
   {
-    path: "/news",
+    path: "/:category/:slug",
     element: <Article />,
   },
 ]);
