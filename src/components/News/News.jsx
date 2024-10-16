@@ -6,12 +6,13 @@ import styles from "./News.module.css";
 
 export default function News() {
   const location = useLocation();
-  const { title, content, author, hat, publishedAt, urlToImage } =
+  const { title, content, author, hat, publishedAt, urlToImage, id } =
     location.state;
+
+  localStorage.setItem("articles_read", id);
 
   return (
     <section>
-      <Search_Header />
       <div className={styles.container}>
         <div className={styles.news_container}>
           <p className={styles.news_hat}>{hat}</p>

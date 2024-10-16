@@ -1,7 +1,11 @@
+import News from "../../components/News/News";
+import Search_Header from "../../components/Search_Header/Search_Header";
+
 export default function Article() {
   return (
     <section>
-      <h1>Article</h1>
+      <Search_Header />
+      <News />
     </section>
   );
 }

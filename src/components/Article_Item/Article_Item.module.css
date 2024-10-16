@@ -78,6 +78,8 @@
   .teaser_lead {
     font: var(--teaser_block_text_lead);
     color: var(--slate-600);
+    max-width: 720px;
+    text-wrap: wrap;
   }
   
   .teaser_author {
