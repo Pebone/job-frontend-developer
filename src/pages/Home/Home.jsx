@@ -7,12 +7,12 @@ export default function Home() {
   return (
     <section>
       <section className={styles.container}>
-        <div className={styles.header_container}>
-          <div className={styles.header_logo}>
+        <div className={styles.home_container}>
+          <div className={styles.home_logo}>
             <img className={styles.logo} src={Logo}></img>
           </div>
 
-          <div className={styles.content}>
+          <div className={styles.home_content}>
             <h1 className={styles.content_title}>
               Explore as últimas notícias sobre tecnologia da web!
             </h1>

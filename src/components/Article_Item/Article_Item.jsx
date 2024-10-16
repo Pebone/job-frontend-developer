@@ -1,9 +1,8 @@
 import styles from "./Article_Item.module.css";
 import Avatar from "../../assets/images/photo.png";
 import { format } from "date-fns";
-import { ptBR } from "date-fns/locale";
 import { useNavigate } from "react-router-dom";
-import { Skeleton } from "@mui/material";
+import { useEffect } from "react";
 
 export default function ArticleItem(props) {
   const navigate = useNavigate();
@@ -15,6 +14,22 @@ export default function ArticleItem(props) {
       .replace(/(^-|-$)/g, "");
     return `/news/${slugQuery}`;
   };
+
+  useEffect(() => {
+    let readArticle = localStorage.getItem("read_article");
+    let readArticleParse;
+    let readArticleLength;
+
+    if (readArticle) {
+      readArticleParse = JSON.parse(readArticle);
+      readArticleLength = Object.keys(readArticleParse).length;
+    }
+
+    if (readArticleLength >= 10) {
+      navigate("/page-block");
+    }
+
+  }, []);
 
   const handleClick = () => {
     const newsSlug = createSlug(props.title);

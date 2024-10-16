@@ -23,26 +23,26 @@ export default function SearchInput() {
   };
 
   return (
-    <form className={styles.form_container} onSubmit={handleSearch}>
-      <div className={styles.form_input_container}>
+    <form className={styles.search_container} onSubmit={handleSearch}>
+      <div className={styles.search_input_container}>
         <img className={styles.search_icon} src={Search}></img>
         <input
-          className={styles.form_search_input}
+          className={styles.search_search_input}
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="O que deseja encontrar?"
         />
       </div>
-      <div className={styles.form_buttons}>
+      <div className={styles.search_buttons}>
         <div
-          className={styles.form_reset_button}
+          className={styles.search_reset_button}
           onClick={handleReset}
         >
           <img className={styles.erase_icon} src={Reset}></img>
         </div>
         <button
-          className={styles.form_input_submit}
+          className={styles.search_input_submit}
           disabled={!query}
           type="submit"
         >

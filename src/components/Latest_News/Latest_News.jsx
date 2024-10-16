@@ -18,13 +18,10 @@ export default function LatestNews(props) {
       try {
         const response = await api.get("", {
           params: {
-            // country: "us",
-            // category: "science",
             q: "science",
           },
         });
 
-        console.log(response.data.articles);
         setArticles(response.data.articles);
         setLoading(false);
       } catch (error) {
@@ -49,19 +46,15 @@ export default function LatestNews(props) {
       {loading ? (
         <section className={styles.container}>
           <div className={styles.latest_news_container}>
-            <div className={styles.home_header}>
-              <p className={styles.home_header_title}>
-                <CircularProgress />
-              </p>
-            </div>
+            <CircularProgress />
           </div>
         </section>
       ) : (
         <section className={styles.container}>
           <div className={styles.latest_news_container}>
-            <div className={styles.home_header}>
-              <p className={styles.home_header_title}>{props.title}</p>
-              <p className={styles.home_header_subtitle}>
+            <div className={styles.latest_news_header}>
+              <p className={styles.latest_news_header_title}>{props.title}</p>
+              <p className={styles.latest_news_header_subtitle}>
                 {props.subtitle
                   ? `Atualizado ${formatDistanceToNow(
                       new Date(articles[0].publishedAt),

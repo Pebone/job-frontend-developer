@@ -11,36 +11,30 @@ export default function News() {
   const { title, content, author, hat, publishedAt, urlToImage, id } =
     location.state;
 
+  localStorage.setItem("articles_read", id);
   const articleKey = `${title}-${publishedAt}`;
 
-  if (!location.state) {
-    useEffect(() => {
-      navigate("/page-block");
-    }, [navigate]);
-    return null;
-  }
-
   useEffect(() => {
-    let articlesRead = localStorage.getItem("articles_read");
+    let readArticle = localStorage.getItem("read_article");
 
-    if (!articlesRead) {
-      articlesRead = {};
+    if (!readArticle) {
+      readArticle = {};
     } else {
       try {
-        articlesRead = JSON.parse(articlesRead);
+        readArticle = JSON.parse(readArticle);
       } catch (e) {
-        articlesRead = {};
+        readArticle = {};
       }
     }
 
-    const count = articlesRead[articleKey] || 0;
+    const readCount = readArticle[articleKey] || 0;
 
-    if (count > 2) {
+    if (readCount >= 2) {
       toast.error("Você já leu esta notícia pelo menos duas vezes!");
       navigate("/");
     } else {
-      articlesRead[articleKey] = count + 1;
-      localStorage.setItem("articles_read", JSON.stringify(articlesRead));
+      readArticle[articleKey] = readCount + 1;
+      localStorage.setItem("read_article", JSON.stringify(readArticle));
     }
   }, [articleKey, navigate]);
 

@@ -1,8 +1,5 @@
-import Logo from "../../assets/images/logo.png";
-import arrowLeft from "../../assets/icons/arrow-left.svg";
 import styles from "./SearchResults.module.css";
-import SearchInput from "../../components/Search_Input/Search_Input";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Search_Header from "../../components/Search_Header/Search_Header";
 import { useEffect, useState } from "react";
 import api from "../../api/api";
@@ -13,28 +10,13 @@ export default function SearchResults() {
   const { query } = useParams();
   const [articles, setArticles] = useState([]);
 
-  const allCategories = [
-    "technology",
-    "business",
-    "sports",
-    "science",
-    "health",
-    "entertainment",
-    "general",
-  ];
-
-  // const searchByCategory = allCategories.includes(query) ? query : "";
-  // const searchByQ = !allCategories.includes(query) ? query : "";
   const searchByQ = query;
-
-  // console.log(searchByCategory);
 
   useEffect(() => {
     const fetchArticles = async () => {
       try {
         const response = await api.get("", {
           params: {
-            // category: searchByCategory,
             q: searchByQ,
           },
         });
@@ -87,7 +69,6 @@ export default function SearchResults() {
                     content={article.content}
                     author={article.author}
                     publishedAt={article.publishedAt}
-                    // category={searchByCategory}
                   />
                 ))}
             </>

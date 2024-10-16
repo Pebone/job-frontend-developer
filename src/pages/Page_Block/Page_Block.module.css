@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: var(--slate-100);
+
+  & h1 {
+    font: var(--teaser_block_text_heading);
+  }
+
+  & a {
+    font: var(--teaser_block_text_lead);
+  }
+
+  & a:hover {
+    text-decoration: underline;
+  }
+}

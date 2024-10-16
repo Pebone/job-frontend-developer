@@ -36,9 +36,6 @@
   gap: 0.5rem;
 }
 
-.news_author_img {
-}
-
 .news_author {
   font: var(--news_author);
   color: var(--slate-600);
@@ -84,7 +81,7 @@
     max-width: 1000px;
   }
 
-  .news_content_img{
+  .news_content_img {
     max-width: 800px;
     height: fit-content;
   }

@@ -41,4 +41,4 @@ As tecnologias que eu utilizei para desenvolver esta aplicação foram: React.JS
 - [x] A lista de notícias deve exibir as últimas notícias em ordem cronológica;
 - [ ] O usuário com JavaScript desabilitado no Browser deverá ser direcionado para page-block;
 - [ ] O usuário em aba anônimo no Browser deverá ser direcionado para page-block;
-- [ ] O usuário com mais de 10 leituras diferentes deverá ser direcionado para page-block;
+- [x] O usuário com mais de 10 leituras diferentes deverá ser direcionado para page-block;
