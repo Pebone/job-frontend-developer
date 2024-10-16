@@ -91,6 +91,10 @@
 .teaser_author_name {
   font: var(--teaser_block_author_name);
   color: var(--slate-600);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
 }
 
 .teaser_author_publishedAt {
@@ -191,8 +195,13 @@
   }
 }
 
-@media (width < 30em){
-  .teaser_content{
+@media (width < 30em) {
+  .teaser_content {
     max-width: 300px;
+  }
+
+  .thumbnail {
+    max-width: 250px;
+    height: fit-content;
   }
 }

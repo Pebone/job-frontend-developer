@@ -71,4 +71,8 @@
     padding: 10rem 1rem;
     gap: 4rem;
   }
+
+  .search_results_title {
+    text-align: center;
+  }
 }

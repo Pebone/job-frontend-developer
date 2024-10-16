@@ -37,7 +37,7 @@
   width: 100%;
 }
 
-@media (width < 30em) {
+@media (width < 40em) {
   .go_back_container {
     display: flex;
     justify-content: center;

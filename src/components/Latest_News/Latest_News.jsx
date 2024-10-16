@@ -3,7 +3,7 @@ import styles from "./Latest_News.module.css";
 import ArticleItem from "../Article_Item/Article_Item";
 import api from "../../api/api";
 import ArrowLeft from "../../assets/icons/arrow-left.svg";
-import { Skeleton } from "@mui/material";
+import { CircularProgress } from "@mui/material";
 
 export default function LatestNews(props) {
   const [articles, setArticles] = useState([]);
@@ -49,7 +49,7 @@ export default function LatestNews(props) {
           <div className={styles.latest_news_container}>
             <div className={styles.home_header}>
               <p className={styles.home_header_title}>
-                <Skeleton variant="text" width={400} height={50} />
+                <CircularProgress />
               </p>
             </div>
           </div>

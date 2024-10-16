@@ -46,14 +46,14 @@
 
 .content_title {
   font: var(--header_heading);
-  animation: slideUp 1.5s ease-in-out;
+  /* animation: slideUp 1.5s ease-in-out; */
   /* transition: all 1s ease-in-out; */
 }
 
 .content_subtitle {
   font: var(--header_subtitle);
   color: var(--slate-600);
-  animation: slideUp 2s ease-in-out;
+  /* animation: slideUp 2s ease-in-out; */
 }
 
 .search_container {
