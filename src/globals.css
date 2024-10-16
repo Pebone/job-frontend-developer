@@ -7,10 +7,15 @@
   --accent: #008b8b;
 
   --header_heading: 700 64px/72px "Playfair Display", sans-serif;
+  --header_heading_resp: 700 36px/42px "Playfair Display", sans-serif;
+  
   --header_subtitle: 400 24px/32px "Poppins", sans-serif;
+  --header_subtitle_resp: 400 16px/24px "Poppins", sans-serif;
+
   --header_search_input_placeholder: 400 16px/24px "Poppins", sans-serif;
 
   --page_heading_title: 800 24px/24px "Poppins", sans-serif;
+
   --page_heading_secondary: 400 20px/24px "Poppins", sans-serif;
 
   --teaser_block_hat: 700 16px/16px "Roboto Condensed", sans-serif;

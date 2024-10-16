@@ -80,3 +80,28 @@
 .search_input_reset {
   color: var(--slate-300);
 }
+
+@media (width < 80em) {
+  .header_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90rem;
+    padding: 1.25rem 2rem 1.25rem;
+    gap: 4rem;
+  }
+}
+
+@media (width <= 60em) {
+
+  .content_title {
+    font: var(--header_heading_resp);
+  }
+  
+  .content_subtitle {
+    font: var(--header_subtitle_resp);
+    color: var(--slate-600);
+  }
+
+}

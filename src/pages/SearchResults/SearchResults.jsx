@@ -23,17 +23,18 @@ export default function SearchResults() {
     "general",
   ];
 
-  const searchByCategory = allCategories.includes(query) ? query : "";
-  const searchByQ = !allCategories.includes(query) ? query : "";
+  // const searchByCategory = allCategories.includes(query) ? query : "";
+  // const searchByQ = !allCategories.includes(query) ? query : "";
+  const searchByQ = query;
 
-  console.log(query.toString());
+  // console.log(searchByCategory);
 
   useEffect(() => {
     const fetchArticles = async () => {
       try {
         const response = await api.get("", {
           params: {
-            category: searchByCategory,
+            // category: searchByCategory,
             q: searchByQ,
           },
         });
@@ -44,7 +45,7 @@ export default function SearchResults() {
     };
 
     fetchArticles();
-  }, [searchByCategory, searchByQ]);
+  }, [searchByQ]);
 
   return (
     <section>
@@ -86,6 +87,7 @@ export default function SearchResults() {
                     content={article.content}
                     author={article.author}
                     publishedAt={article.publishedAt}
+                    // category={searchByCategory}
                   />
                 ))}
             </>
