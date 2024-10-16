@@ -19,10 +19,17 @@
   --page_heading_secondary: 400 20px/24px "Poppins", sans-serif;
 
   --teaser_block_hat: 700 16px/16px "Roboto Condensed", sans-serif;
+
   --teaser_block_text_heading: 800 36px/48px "Playfair Display", sans-serif;
+  --teaser_block_text_heading_resp: 800 24px/32px "Playfair Display", sans-serif;
+
   --teaser_block_text_lead: 400 20px/27.5px "Roboto Condensed", sans-serif;
+
   --teaser_block_author_name: 700 16px/22px "Poppins", sans-serif;
+  --teaser_block_author_name_resp: 700 12px/20px "Poppins", sans-serif;
+
   --teaser_block_author_secondary: 400 14px/17.5px "Poppins", sans-serif;
+  --teaser_block_author_secondary_resp: 400 12px/17.5px "Poppins", sans-serif;
 
   --article_hat: 700 24px/24px "Poppins", sans-serif;
   --article_title: 700 64px/72px "Playfair Display", sans-serif;
