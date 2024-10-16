@@ -16,6 +16,16 @@
   gap: 4rem;
 }
 
+@keyframes slideUp {
+  0% {
+    transform: translateX(-1000px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
 .header_logo {
   display: flex;
   justify-content: center;
@@ -36,11 +46,14 @@
 
 .content_title {
   font: var(--header_heading);
+  animation: slideUp 1.5s ease-in-out;
+  /* transition: all 1s ease-in-out; */
 }
 
 .content_subtitle {
   font: var(--header_subtitle);
   color: var(--slate-600);
+  animation: slideUp 2s ease-in-out;
 }
 
 .search_container {

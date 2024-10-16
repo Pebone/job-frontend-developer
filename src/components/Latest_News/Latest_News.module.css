@@ -13,6 +13,17 @@
   max-width: 90rem;
   padding: 10rem 8rem;
   gap: 4rem;
+  animation: slideUp 2.5s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(500px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .home_header {
