@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.home_container {
+.latest_news_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,7 +105,7 @@
 }
 
 @media (width < 80em) {
-  .home_container {
+  .latest_news_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +118,7 @@
 }
 
 @media (width < 60em) {
-  .home_container {
+  .latest_news_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,7 +131,7 @@
 }
 
 @media (width < 50em) {
-  .home_container {
+  .latest_news_container {
     display: flex;
     flex-direction: column;
     justify-content: center;

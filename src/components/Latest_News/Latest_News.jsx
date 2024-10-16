@@ -43,7 +43,7 @@ export default function LatestNews(props) {
 
   return (
     <section className={styles.container}>
-      <div className={styles.home_container}>
+      <div className={styles.latest_news_container}>
         <div className={styles.home_header}>
           <p className={styles.home_header_title}>{props.title}</p>
           <p className={styles.home_header_subtitle}>

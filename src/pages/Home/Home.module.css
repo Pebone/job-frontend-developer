@@ -1,9 +1,9 @@
 .container {
-    background-color: var(--slate-100);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--slate-100);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header_container {
@@ -94,14 +94,31 @@
 }
 
 @media (width <= 60em) {
-
   .content_title {
     font: var(--header_heading_resp);
   }
-  
+
   .content_subtitle {
     font: var(--header_subtitle_resp);
     color: var(--slate-600);
   }
+}
 
+@media (width < 30em) {
+  .header_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90rem;
+    padding: 1.25rem 1rem 1.25rem;
+    gap: 4rem;
+  }
+
+  .header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+  }
 }
