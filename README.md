@@ -13,7 +13,7 @@ Agradeço desde já a oportunidade de participar deste processo seletivo, pois a
 O objetivo era desenvolver uma aplicação frontend que exibisse as últimas notícias sobre tecnologia em `ordem da publicação`. Além disso, deveria incluir um `sistema de busca` para que os usuários encontrassem o artigo baseado no title e author do seu interesse.
 
 ## Tecnologias Utilizadas
-As tecnologias que eu utilizei para desenvolver esta aplicação foram: React.JS, CSS(CSS Modules), HTML, Vite, Material-UI, Axios, date-fns.
+As tecnologias que eu utilizei para desenvolver esta aplicação foram: React.JS, CSS(CSS Modules), HTML, Vite, Material-UI, Axios, date-fns e sonner(Toast).
 
 ## Requisitos
 ### Requisitos Funcinais
@@ -26,12 +26,12 @@ As tecnologias que eu utilizei para desenvolver esta aplicação foram: React.JS
 - [x] Deve ser possível salvar um `id` da notíca lida;
       
 ### Regras de negócio
-- [ ] O usuário não pode ler mais que 2 vezes a mesma notícia;
-- [ ] O usuário não pode ler uma notícia com o JavaScript desabilitado;
+- [x] O usuário não pode ler mais que 2 vezes a mesma notícia;
+- [x] O usuário não pode ler uma notícia com o JavaScript desabilitado;
 - [ ] O usuário não pode ler uma notícia em modo anônimo;
-- [ ] O usuário não poderá acessar uma página de categoria;
-- [ ] O usuário não poderá acessar uma página de author;
-- [ ] O usuário deverá ser redirecionado para página principal quando tentar acessar a página de categoria;
+- [x] O usuário não poderá acessar uma página de categoria;
+- [x] O usuário não poderá acessar uma página de author;
+- [x] O usuário deverá ser redirecionado para página principal quando tentar acessar a página de categoria;
       
 ### Requisitos não-funcionais
 - [ ] Dynamic Routes: o `slug` da notícida deve ser: `/[category]/[heading]-[id]`

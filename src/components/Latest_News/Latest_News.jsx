@@ -4,6 +4,8 @@ import ArticleItem from "../Article_Item/Article_Item";
 import api from "../../api/api";
 import ArrowLeft from "../../assets/icons/arrow-left.svg";
 import { CircularProgress } from "@mui/material";
+import { formatDistanceToNow } from "date-fns";
+import { ptBR } from "date-fns/locale";
 
 export default function LatestNews(props) {
   const [articles, setArticles] = useState([]);
@@ -60,7 +62,15 @@ export default function LatestNews(props) {
             <div className={styles.home_header}>
               <p className={styles.home_header_title}>{props.title}</p>
               <p className={styles.home_header_subtitle}>
-                {props.subtitle ? "Atualizado há 30 minutos" : ""}
+                {props.subtitle
+                  ? `Atualizado ${formatDistanceToNow(
+                      new Date(articles[0].publishedAt),
+                      {
+                        locale: ptBR,
+                        addSuffix: true,
+                      }
+                    )}`
+                  : ""}
               </p>
             </div>
 

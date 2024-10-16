@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, Navigate } from "react-router-dom";
 import Home from "../src/pages/Home/Home";
 import SearchResults from "./pages/SearchResults/SearchResults";
 import Article from "./pages/Article/Article";
@@ -13,7 +13,19 @@ export const router = createBrowserRouter([
     element: <SearchResults />,
   },
   {
-    path: "/:category/:slug",
+    path: "/news/:slug",
     element: <Article />,
+  },
+  {
+    path: "/category/:category",
+    element: <Navigate to="/" replace/>,
+  },
+  {
+    path: "/author/:author",
+    element: <Navigate to="/" replace/>,
+  },
+  {
+    path: "/page-block",
+    element: <Navigate to="/" replace/>,
   },
 ]);

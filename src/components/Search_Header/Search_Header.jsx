@@ -9,7 +9,7 @@ export default function Search_Header() {
     <section className={styles.container}>
       <Link to={"/"} className={styles.go_back_container}>
         <img className={styles.go_back_icon} src={arrowLeft}></img>
-        <p>Home</p>
+        <p>Início</p>
       </Link>
       <div className={styles.search_input_container}>
         <div className={styles.search_input_logo}>
