@@ -10,7 +10,7 @@ Tive algumas dificuldades com alguns objetivos, infelizmente não consegui compl
 Agradeço desde já a oportunidade de participar deste processo seletivo, pois aprendi muito durante o desenvolvimento desta aplicação.
 
 ## Objetivo
-O objetivo era desenvolver uma aplicação frontend que exibisse as últimas notícias sobre tecnologia em `ordem da publicação`. Além disso, deveria incluir um `sistema de busca` para que os usuários encontrassem o artigo baseado no title e author do seu interesse.
+O objetivo era desenvolver uma aplicação frontend que exibisse as últimas notícias sobre diversos assuntos em `ordem da publicação`. Além disso, deveria incluir um `sistema de busca` para que os usuários encontrassem o artigo baseado no title e author do seu interesse.
 
 ## Como rodar o projeto
 Para rodar o projeto basta dar um git clone e, ao abrir o projeto no seu computador, abra o terminal da sua IDE e digite "git checkout master". Dessa forma, você estará na branch correta do projeto. Com isso, agora você pode digitar "npm i". Depois que a instalação for concluida, digite "npm run dev" e o projeto deverá ser iniciado corretamente.
